@@ -2,6 +2,6 @@
 intensive by glo-academy
 
 ## Used:
-HTML
+HTML \n
 CSS
 Bootstrap v5
