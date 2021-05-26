@@ -1,10 +1,15 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 body {
-    /* background: url(/images/Desktop.jpg) center top; */
+    background: url(/images/Desktop.jpg) center top;
 
     font-family: Fira Sans, Arial, sans-serif;
     color: #111238;
     margin: 0;
 }
+
+/* HEADER */
 .header {
     background-color: #F2F3F6;
 }
@@ -26,22 +31,84 @@ body {
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
+    border:none;
 }
-.button-sign-in:hover {
+.button-link {
+    margin-right: 5px;
+}
+.button-link:hover {
     background-color: #3e85db;
     color: #FFF;
 }
-.button-sign-in:active {
+.button-link:active {
     background-color: #d8a842;
     color: #FFF;
 }
-.button-sign-up {
+.button-primary {
     background-color: #1A75E8;
     color: #FFF;
 }
-.button-sign-up:hover {
+.button-primary:hover {
     background-color: #3e85db;
 }
-.button-sign-up:active {
+.button-primary:active {
     background-color: #d8a842;
+}
+.button-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.hero-text {
+    font-size: 18px;
+    line-height: 140%;
+}
+.input-group {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(209, 209, 209, 0.1);
+    box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+}
+.input {
+    border: none;
+    flex-grow: 1;
+    color: #B2B2B2;
+    padding-left: 15px;
+}
+.input,
+.button-text {
+    font-size: 16px;
+    line-height: 19px;
+    vertical-align: middle;
+}
+.tag-label,
+.tag {
+    font-size: 14px;
+    line-height: 17px;
+    color: #B2B2B2;
+}
+.tag-label {
+    margin: 0 10px;
+}
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #B2B2B2;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+/* SECTION */
+
+.card-icon{
+    fill: #111238;
 }
