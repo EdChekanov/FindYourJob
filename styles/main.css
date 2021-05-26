@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background: url(/images/Desktop.jpg) center top;
+    /* background: url(/images/Desktop.jpg) center top; */
 
     font-family: Fira Sans, Arial, sans-serif;
     color: #111238;
@@ -109,6 +109,33 @@ body {
 
 /* SECTION */
 
+.section {
+    padding: 77px 0;
+}
+.section-title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 27px;
+}
+.card {
+    background-color: #F2F3F6;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 40px 0;
+    width: 100%;
+    border-radius: 10px;
+    color: #111238;
+}
 .card-icon{
     fill: #111238;
+    max-width: 25%;
+}
+.card:hover {
+    background-color: #1A75E8;
+    color: #fff;
+}
+.card:hover  .card-icon{
+    fill: #fff;
 }
