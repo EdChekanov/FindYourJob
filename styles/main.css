@@ -1,10 +1,21 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+img {
+    max-width: 100%;
+}
+@keyframes start {
+    0% {opacity: 0;}
+    25% {opacity: 0.35;}
+    50% {opacity: 0.65;}
+    75% {opacity: 0.85;}
+    100% {opacity: 1;}
+}
 body {
     font-family: Fira Sans, Arial, sans-serif;
     color: #111238;
     margin: 0;
+    /* animation: start 3s 1; */
 }
 
 /* HEADER */
@@ -24,6 +35,13 @@ body {
 }
 .menu-link:hover {
     color: #1A75E8;
+}
+.burger-menu {
+    width: 50px;
+    height: 50px;
+    background: url(../images/menu-burger.svg) center no-repeat;
+    margin-left: auto;
+    cursor: pointer;
 }
 .button {
     padding: 15px 30px;
@@ -54,7 +72,7 @@ body {
 }
 .button-icon {
     vertical-align: middle;
-    margin-right: 5px;
+    max-width: none;
 }
 .hero-title {
     font-weight: 900;
@@ -80,12 +98,16 @@ body {
     flex-grow: 1;
     color: #B2B2B2;
     padding-left: 15px;
+    width: 0;
 }
 .input,
 .button-text {
     font-size: 16px;
     line-height: 19px;
     vertical-align: middle;
+}
+.button-text {
+    margin-left: 5px;
 }
 .tag-label,
 .tag {
@@ -119,8 +141,7 @@ body {
     background-color: #F2F3F6;
     display: inline-block;
     text-decoration: none;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin: 20px 0;
     padding: 40px 0;
     width: 100%;
     border-radius: 10px;
@@ -158,11 +179,11 @@ body {
     border-radius: 50%;
     background: #fff url(../images/tehnopark.png) center no-repeat;
     background-size: contain; 
-    margin-right: 10px;
 }
 .offer-info {
     color: #111238;
-    margin-right: 45px;
+    flex-grow: 1;
+    text-align: center;
 }
 .offer-title {
     font-weight: bold;
@@ -183,15 +204,15 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    margin-right: 55px;
 }
 .more {
     font-size: 14px;
     line-height: 17px;
     color: #1A75E8;
     text-decoration: none;
-    margin-left: auto;
     position: relative;
+    flex-grow: 5;
+    text-align: right;
 }
 .more::after {
     content: url(../images/arrowmore.svg);
@@ -201,9 +222,9 @@ body {
 }
 @keyframes shake {
     0% {transform: rotate(0deg)}
-    25% {transform: rotate(10deg)}
+    25% {transform: rotate(2deg)}
     50% {transform: rotate(0deg)}
-    75% {transform: rotate(-10deg)}
+    75% {transform: rotate(-2deg)}
     100% {transform: rotate(0deg)}
 }
 .more:hover {
