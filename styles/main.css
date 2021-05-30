@@ -263,6 +263,9 @@ body {
 .footer {
     padding: 70px 0 60px;
 }
+.footer-row {
+    text-align: center;
+}
 .logo-img {
     margin-bottom: 18px;
 }
@@ -286,8 +289,45 @@ body {
     text-decoration: none;
     font-size: 16px;
     line-height: 19px;
+    color: #111238;
 }
 .footer-link:hover {
     opacity: 0.4;
     transition: 0.4s;
+}
+
+/* POPUP */
+
+.popup {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    opacity: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+.popup-active {
+    opacity: 1;
+    right: 0%;
+    transition: 0.4s;
+}
+.close-burger-menu {
+    width: 50px;
+    height: 50px;
+    background: url(../images/close-menu-burger.svg) center no-repeat;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+
+
+/* MEDIA  */
+
+@media screen and (max-width: 768px) {
+    .input::placeholder {
+        color: #fff;
+    }
 }

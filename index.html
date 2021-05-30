@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
     <title>Find Your Job</title>
 </head>
 
@@ -261,7 +262,7 @@
     <!-- /.section subscribe -->
     <footer class="footer">
         <div class="container">
-            <div class="row">
+            <div class="row flex-column flex-md-row footer-row">
                 <div class="col">
                     <a href="#">
                         <img class="logo-img" src="images/logo-findyourjob.svg" alt="logo - find your job">
@@ -270,18 +271,18 @@
                     <p class="logo-text">&copy;2021</p>
                 </div>
                 <!-- /.col -->
-                <div class="col">
+                <div class="col mt-4 mt-md-0">
                     <h4 class="item-title">Свяжитесь с нами</h4>
                     <!-- /.item-title -->
                     <ul class="list">
                         <li>
-                            <a href="#" class="footer-link">
+                            <a href="tel:88002020300" class="footer-link">
                                 8 800 20 20 300
                             </a>
                             <!-- /.item -->
                         </li>
                         <li>
-                            <a href="#" class="footer-link">
+                            <a href="mailto:info@findyourjob.net" class="footer-link">
                                 info@findyourjob.net
                             </a>
                             <!-- /.item -->
@@ -289,7 +290,7 @@
                     </ul>
                     <!-- /.list -->
                 </div>
-                <div class="col">
+                <div class="col mt-4 mt-md-0">
                     <h4 class="item-title">Информация</h4>
                     <!-- /.item-title -->
                     <ul class="list">
@@ -314,7 +315,7 @@
                     </ul>
                     <!-- /.list -->
                 </div>
-                <div class="col">
+                <div class="col mt-4 mt-md-0">
                     <h4 class="item-title">Навигация по сайту</h4>
                     <!-- /.item-title -->
                     <ul class="list">
@@ -345,6 +346,30 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    
+    <div class="popup d-flex flex-column align-items-center justify-content-center">
+        <div class="close-burger-menu d-md-none"></div>
+        <!-- /.col -->
+        <div class="col">
+            <nav>
+                <ul class="menu d-flex justify-content-center">
+                    <li class="menu-item"><a href="" class="menu-link">Главная</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Вакансии</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Компании</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /.col -->
+        <div class="col">
+            <a href="" class="button button-link">
+                Войти
+            </a>
+            <a href="" class="button button-primary">
+                Регистрация
+            </a>
+        </div>
+    </div>
+    <!-- /.popup -->
 </body>
 
 </html>
