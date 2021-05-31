@@ -310,7 +310,7 @@ body {
     overflow: hidden;
 }
 .popup-active {
-    opacity: 1;
+    opacity: 0.95;
     right: 0%;
     transition: 0.4s;
 }
@@ -326,8 +326,36 @@ body {
 
 /* MEDIA  */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 577px){
     .input::placeholder {
         color: #fff;
+    }
+}
+@media screen and (max-width: 576px) {
+    .input::placeholder {
+        font-size: 10px;
+    }
+    .hero-title {
+        font-size: 20px;
+        line-height: 140%;
+    }
+    .hero-text {
+        font-size: 10px;
+        line-height: 140%;
+    }
+    .input-group {
+        margin: 0 auto;
+    }
+    .input {
+        height: 3em;
+        width: auto;
+    }
+    .subscribe-title {
+        font-size: 20px;
+        line-height: 140%;
+    }
+    .section-text {
+        font-size: 10px;
+        line-height: 140%;
     }
 }
