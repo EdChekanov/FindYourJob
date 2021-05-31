@@ -15,7 +15,7 @@ body {
     font-family: Fira Sans, Arial, sans-serif;
     color: #111238;
     margin: 0;
-    /* animation: start 3s 1; */
+    animation: start 2s 1;
 }
 
 /* HEADER */
@@ -318,9 +318,8 @@ body {
     width: 50px;
     height: 50px;
     background: url(../images/close-menu-burger.svg) center no-repeat;
-    margin-left: auto;
     cursor: pointer;
-    margin-right: 5rem;
+    align-self: flex-end;
 }
 
 
